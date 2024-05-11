@@ -12,7 +12,7 @@ const Services = () => {
             imgUrl: [
                 {
                     url: "https://umbrellacover.co.uk/wp-content/uploads/2023/08/womans-legs-ge54d6e25e_1920.jpg",
-                    height: 'h-[500px]'
+                    height: 'md:h-[500px]'
                 }
             ],
             bgColor: '#B6E0F1'
@@ -26,7 +26,7 @@ const Services = () => {
             imgUrl: [
                 {
                     url: "https://umbrellacover.co.uk/wp-content/uploads/2023/08/00405-CONTENT-SHU-VanInsurance-Nissan-MOBILE_600x900px_HxW0900x0600_92a354ff-b6f8-4cc4-9674-b420b8ffa64d.webp",
-                    height: 'h-[750px]'
+                    height: 'md:h-[750px]'
                 }
             ],
             bgColor: '#CFE67F'
@@ -44,7 +44,7 @@ const Services = () => {
                 },
                 {
                     url: "https://umbrellacover.co.uk/wp-content/uploads/2023/08/depositphotos_423216766-stock-photo-seattle-washington-usa-june-2019.webp",
-                    height: 'h-[340px]'
+                    height: 'md:h-[340px]'
                 },
             ],
             bgColor: '#B6E0F1'
@@ -94,7 +94,7 @@ const Services = () => {
                     }
                 </div>
             </div> */}
-            <div className="relative w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden">
+            <div className="relative w-full h-full  md:h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden px-2 md:px-0">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="https://umbrellacover.co.uk/wp-content/uploads/2023/08/car-transportation-car-wallpapers-6603726.jpg"
@@ -103,9 +103,9 @@ const Services = () => {
                     />
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
-                <div className="z-10 ">
-                    <h1 className="text-6xl text-[#051F83] font-bold">Why choose us?</h1>
-                    <div className="text-xl text-white font-bold space-y-2 mt-16">
+                <div className="z-10 py-7 ">
+                    <h1 className=" text-center text-2xl md:text-6xl px-4 md:px-0 text-[#051F83] font-bold">Why choose us?</h1>
+                    <div className="md:text-xl px-4 md:px-0 text-white font-semibold md:font-bold space-y-2 mt-8 md:mt-16">
                         {chooseArray.map(({ id, p }) => (
                             <p key={id}>
                                 <span>{id}.</span> {p}
@@ -114,7 +114,7 @@ const Services = () => {
                     </div>
                     <div className='mt-8 flex flex-col justify-center items-center gap-6'>
                         <button className='bg-blue-600 text-black hover:bg-blue-700 transition-all duration-200 px-11 py-4'>Get a Quote Now</button>
-                        <button className='bg-blue-600 text-black hover:bg-blue-700 transition-all duration-200 px-11 py-6 text-2xl uppercase underline'>Call us toll free: 00000000000</button>
+                        <button className='bg-blue-600 text-black hover:bg-blue-700 transition-all duration-200 px-11 py-6 md:text-2xl uppercase underline'>Call us toll free: 00000000000</button>
                     </div>
                 </div>
             </div>
